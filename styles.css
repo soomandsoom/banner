@@ -391,7 +391,7 @@ body {
     overflow: hidden; /* 넘치는 부분을 숨깁니다. */
     border-radius: 50%; /* 원형의 컨테이너를 생성합니다. */
     margin-top: 3.2vw; /*위치조절*/
-    left:65vw;
+    left:68vw;
 
 }
 
@@ -473,7 +473,7 @@ body {
 #inputText1 {
     position: absolute;
     top: 7vw;
-    left:8.3vw;
+    left:12.3vw;
     resize: none;
     cursor: grab;
     width: 37vw; /*800*/
@@ -495,7 +495,7 @@ body {
 #inputText2 {
     position: absolute;
     top: 3vw;
-    left:8.7vw;
+    left:12.7vw;
     resize:none;
     cursor: grab;
     width: 37.04vw;
@@ -517,7 +517,7 @@ body {
 #inputText3 {
     position: absolute;
     top: 1vw;
-    left:9vw;
+    left:13vw;
     resize:none;
     cursor: grab;
     width: 37.04vw;
