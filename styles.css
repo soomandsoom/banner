@@ -25,17 +25,6 @@
     align-items: center;
 }
 
-.close {
-    position: absolute;
-    right:30vw;
-    cursor: pointer;
-    font-size: 1.1112vw;
-
-}
-
-.close:hover {
-    color: #FF3797;
-}
 
 .popinfo {
     position: absolute;
