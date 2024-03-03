@@ -40,9 +40,14 @@ var div1Links = [
 
 //popup
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('popup').style.display = 'block';
-});
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
 
-document.querySelector('.close').addEventListener('click', function() {
-  document.getElementById('popup').style.display = 'none';
+  // 팝업 내부 요소가 클릭되었을 때도 팝업을 닫는 이벤트를 추가합니다.
+  popup.addEventListener('click', function(event) {
+      // 팝업 내부의 모든 요소에 대해 이벤트가 발생했을 때도 팝업이 닫히지 않도록 합니다.
+      if (!event.target.closest('.popup-content')) {
+          popup.style.display = 'none';
+      }
+  });
 });
