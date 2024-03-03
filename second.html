@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 웹 게첩합니다</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="first-line"></div>
+    <div class="second-line"></div>
+
+    <div class="user-banner">
+    
+        <div class="logo">
+            <div class="logo-line">
+                <div class="line1"></div>
+                <div class="line1"></div>
+            </div>
+            <div class="logo-banner" onclick="redirectToLink('./index.html')">
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                <div class="logo-text">
+                    우리 웹 게첩합니다.ㅤㅤㅤㅤ
+                </div>
+                
+            </div>
+            <div class="logo-line">
+                <div class="line1"></div>
+                <div class="space"></div>
+                <div class="line1"></div>
+            </div>
+        </div>
+
+        <div class="text-group">
+            <div id="text-container"></div>
+        </div>
+
+        <div class="logo">
+            <div class="logo-line">
+                <div class="line1"></div>
+                <div class="line1"></div>
+            </div>
+            <input type="text" id="inputText" class="input-style" placeholder="홍보할 내용을 입력하세요.">
+        </div>
+
+    </div>
+
+
+    <div class="main-banner">
+        <div class="title">
+            <div class="title-text"><span id="containerbutton">여기를 클릭</span>하고, 현수막을 직접 꾸며보세요! 화살표를 누르면 배경이 바뀝니다.</div>
+        </div>
+        <div class="content">
+            <div class="bg">
+                <button class="bg-button"onclick="prevImage()">❮</button>
+
+                <div id="bg-container">
+                    <img class="image" src="./bannerbg1.svg">
+                    <img class="image" src="./bannerbg2.svg">
+                    <img class="image" src="./bannerbg3.svg">
+                    <img class="image" src="./bannerbg4.svg">
+                    <img class="image" src="./bannerbg5.svg">
+                </div>
+
+                <button class="bg-button" onclick="nextImage()">❯</button>
+            </div>
+
+            <div class="container" id="container">
+                <div id="draggableWebcam" class="draggable">
+                    <video id="webcam" autoplay playsinline></video>
+                </div>
+                <div id="inputContainer" class="draggable">
+                    <textarea id="inputText1" class="textarea" placeholder="텍스트를 입력하세요."></textarea>
+                </div>   
+
+                <div id="inputContainer" class="draggable">
+                    <textarea id="inputText2" class="textarea" placeholder="텍스트를 입력하세요."></textarea>
+                </div>   
+                <div id="inputContainer" class="draggable">
+                    <textarea id="inputText3" class="textarea" placeholder="텍스트를 입력하세요."></textarea>
+                </div>                        
+            </div>
+        </div>
+    </div>
+
+    <script src="./draganddrop.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
