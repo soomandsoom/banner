@@ -9,7 +9,7 @@ function redirectToLink(url) {
 
 
 // 최대 입력값 개수
-const MAX_INPUTS = 12;
+const MAX_INPUTS = 10;
 
 // 입력값을 저장할 배열
 let inputs = [];
