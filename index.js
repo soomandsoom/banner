@@ -9,7 +9,7 @@ var div1Links = [
   // div1과 div2를 랜덤하게 생성하여 row에 추가하는 함수
     function generateItems() {
     var container = document.querySelector('.content-box');
-    var rowCount = 20; // 생성할 줄의 수
+    var rowCount = 18; // 생성할 줄의 수
     for (var j = 0; j < rowCount; j++) {
         var row = document.createElement('div');
         row.classList.add('row');
