@@ -34,7 +34,7 @@
 
 .popinfo2 {
     position: absolute;
-    top: 56vw;
+    top: 48.2vw;
     left:17vw;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .user-banner {
     display: grid;
-    grid-template-rows: 8vw auto 6vw;
+    grid-template-rows: 8vw 38.33vw 6vw;
     padding-left: 3vw;
     height:60.3vw;
     overflow: hidden;
@@ -222,17 +222,6 @@ body {
     animation: blink 0.1s linear infinite;
 }
 
-.text-item:nth-child(11) {
-    animation: blink2 0.1s linear 0.1s infinite;
-}
-
-.text-item:nth-child(12) {
-    margin-bottom: 0vw;
-    padding-bottom: 0vw;
-    z-index: 1;
-    animation: blink2 0.1s linear infinite;
-
-}
 
 .text-group {
     padding: 0vw;
@@ -263,7 +252,7 @@ body {
 
 /*index.html*/
 .content-box {
-    margin-top: 9.6vw; /*네모네모들 위에 마진*/
+    padding-top: 9.6vw;
     overflow: hidden;
     flex-wrap: wrap;
 }
@@ -344,6 +333,11 @@ body {
     cursor:grabbing;
 }
 
+.textbox:hover {
+    opacity:0.3;
+    transition: opacity 0.5s;
+}
+
 
 /*선*/
 .first-line {
@@ -418,8 +412,7 @@ body {
 .bg {
     display: grid;
     grid-template-columns: 11vw auto 11vw;
-    margin-top: 3vw;
-    height: 25vw;
+    height: 23vw;
 }
 
 .image {
@@ -542,6 +535,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:80%;
 }
 
     @keyframes expand {
